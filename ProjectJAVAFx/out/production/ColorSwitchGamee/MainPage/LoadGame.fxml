@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loadGamePane" prefHeight="700.0" prefWidth="450.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.LoadGameController">
+   <children>
+      <Text fill="#fd0000" layoutX="14.0" layoutY="65.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Game" wrappingWidth="213.33673095703125">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backButton" fitHeight="80.0" fitWidth="80.0" layoutX="356.0" layoutY="12.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../media/homeButtonImg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button1" layoutX="149.0" layoutY="187.0" mnemonicParsing="false" onAction="#game1" prefHeight="55.0" prefWidth="137.0" text="Game 1" textFill="#292322">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="149.0" layoutY="281.0" mnemonicParsing="false" onAction="#game2" prefHeight="55.0" prefWidth="137.0" text="Game 2" textFill="#292322">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" layoutX="149.0" layoutY="369.0" mnemonicParsing="false" onAction="#game3" prefHeight="55.0" prefWidth="137.0" text="Game 3" textFill="#292322">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" layoutX="149.0" layoutY="461.0" mnemonicParsing="false" onAction="#game4" prefHeight="55.0" prefWidth="137.0" text="Game 4" textFill="#292322">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" layoutX="149.0" layoutY="551.0" mnemonicParsing="false" onAction="#game5" prefHeight="55.0" prefWidth="137.0" text="Game 5" textFill="#292322">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="gameNotDound" fill="WHITE" layoutX="124.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game not Found">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

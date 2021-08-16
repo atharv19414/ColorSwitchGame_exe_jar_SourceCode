@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="mainRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="450.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.MainPageController">
+   <children>
+      <VBox alignment="CENTER" layoutY="332.0" prefHeight="368.0" prefWidth="450.0" spacing="40.0">
+         <children>
+            <Button fx:id="newGame" alignment="CENTER" mnemonicParsing="false" onAction="#newGame" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="New Game" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="loadGame" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadGame" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="Load Game" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewScore" alignment="CENTER" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#viewScore" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="View Score" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitGame" alignment="CENTER" layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="34.0" prefWidth="125.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="Exit Game" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Circle fx:id="c1" fill="#1f93ff00" layoutX="225.0" layoutY="184.0" radius="170.0" strokeType="INSIDE" strokeWidth="17.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="RED" offset="0.007633587786259542" />
+                  <Stop color="#8700ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Circle fx:id="c2" fill="#1f93ff00" layoutX="225.0" layoutY="184.0" radius="138.0" strokeType="INSIDE" strokeWidth="14.0">
+         <stroke>
+            <LinearGradient endY="1.0" proportional="false" startX="1.0">
+               <stops>
+                  <Stop color="#00ff22" />
+                  <Stop color="#00ff22" offset="0.007633587786259542" />
+                  <Stop color="#00d7ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Text fill="WHITE" layoutX="93.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C   L   R SWITCH" textAlignment="CENTER" wrappingWidth="263.19997558593764">
+         <font>
+            <Font name="Cambria Bold" size="54.0" />
+         </font>
+      </Text>
+      <Circle fx:id="c3" fill="#1f93ff00" layoutX="185.0" layoutY="149.0" radius="17.0" strokeType="INSIDE" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endY="1.0" proportional="false" startX="1.0">
+               <stops>
+                  <Stop color="#00ff22" />
+                  <Stop color="#00ff22" offset="0.007633587786259542" />
+                  <Stop color="#00d7ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Circle fx:id="c4" fill="#1f93ff00" layoutX="251.0" layoutY="149.0" radius="17.0" strokeType="INSIDE" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false" startX="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="RED" offset="0.007633587786259542" />
+                  <Stop color="#8700ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+   </children>
+</Pane>

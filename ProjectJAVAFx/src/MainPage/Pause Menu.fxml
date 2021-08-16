@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pauseMenuPane" prefHeight="700.0" prefWidth="450.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.PauseMenuController">
+
+   <children>
+      <VBox alignment="CENTER" layoutX="6.0" layoutY="297.0" prefHeight="395.0" prefWidth="437.0" spacing="35.0">
+         <children>
+            <Button fx:id="resumeBtn" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#resume" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="RESUME GAME" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="restartGame" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="258.0" mnemonicParsing="false" onAction="#restart" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="RESTART GAME" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveExit" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="224.0" mnemonicParsing="false" onAction="#saveAndExit" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: black; -fx-border-color: grey; -fx-border-width: 4; -fx-cursor: hand;" text="SAVE AND EXIT TO MAIN MENU" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fx:id="homeBtn" fitHeight="80.0" fitWidth="80.0" layoutX="356.0" layoutY="14.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../media/homeButtonImg.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="c3" fill="#1f93ff00" layoutX="225.0" layoutY="216.0" radius="100.0" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 32;">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Circle fx:id="c31" fill="#1f93ff00" layoutX="223.0" layoutY="216.0" radius="81.0" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 32;">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#8700ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Circle fx:id="c4" fill="#1f93ff00" layoutX="225.0" layoutY="216.0" radius="64.0" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 32;">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="#00ff22" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Circle fx:id="c41" fill="#1f93ff00" layoutX="225.0" layoutY="216.0" radius="46.0" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 32;">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" proportional="false">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#00d7ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Circle>
+      <Text fill="#29cf50" layoutX="105.0" layoutY="67.0" stroke="#ffed00" strokeType="OUTSIDE" strokeWidth="2.0" text="Pause Menu" textAlignment="CENTER" wrappingWidth="240.80002441406236">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
